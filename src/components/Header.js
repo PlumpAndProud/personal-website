@@ -1,8 +1,11 @@
 export default function Header() {
   return (
     <>
-      <h1>Siema</h1>
-      <h2>Siema</h2>
+      <ul className="Navbar">
+        <li className="Projects">My works</li>
+        <li className="About">About me</li>
+        <li className="Contact">Contact</li>
+      </ul>
     </>
   );
 }
