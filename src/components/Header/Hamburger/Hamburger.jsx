@@ -1,4 +1,4 @@
-import Hamburger from "hamburger-react";
+import { Squash as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { useRef } from "react";
 import { useClickAway } from "react-use";
@@ -15,9 +15,11 @@ export default function HamburgerSection() {
       <div className={style.Project_navigation_wrapper} ref={ref}>
         <Hamburger
           toggled={isOpen}
-          size={20}
+          size={22}
           toggle={setOpen}
           color="#dddddd"
+          label="Show menu"
+          rounded
         />
         {isOpen && (
           <div className={style.Project_list}>
