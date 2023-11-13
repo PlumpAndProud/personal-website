@@ -1,14 +1,18 @@
 import Hamburger from "hamburger-react";
 import { useState } from "react";
+import { useRef } from "react";
+import { useClickAway } from "react-use";
 import style from "./Hamburger.module.scss";
-import React from "react";
 
 export default function HamburgerSection() {
   const [isOpen, setOpen] = useState(false);
+  const ref = useRef(null);
+
+  useClickAway(ref, () => setOpen(false));
 
   return (
     <>
-      <div className={style.Project_navigation_wrapper}>
+      <div className={style.Project_navigation_wrapper} ref={ref}>
         <Hamburger
           toggled={isOpen}
           size={20}
