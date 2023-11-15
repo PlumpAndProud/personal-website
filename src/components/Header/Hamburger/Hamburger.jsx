@@ -2,7 +2,7 @@ import { Squash as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { useRef } from "react";
 import { useClickAway } from "react-use";
-import { AnimatePresence, motion, spring } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import style from "./Hamburger.module.scss";
 
 export default function HamburgerSection() {
