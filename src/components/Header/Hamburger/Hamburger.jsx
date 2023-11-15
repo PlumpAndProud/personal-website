@@ -42,7 +42,7 @@ export default function HamburgerSection() {
                     delay: 0.2,
                   }}
                 >
-                  SIema
+                  <div className={style.text}>Siema</div>
                 </motion.li>
                 <motion.li
                   initial={{ scale: 0, opacity: 0 }}
@@ -54,7 +54,7 @@ export default function HamburgerSection() {
                     delay: 0.4,
                   }}
                 >
-                  Siema
+                  <div className={style.text}>Siema</div>
                 </motion.li>
               </ul>
             </motion.div>
